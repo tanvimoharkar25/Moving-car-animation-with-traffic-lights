@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Car with Traffic Light</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="myCanvas">
+      <div class="road"></div>
+
+      <!-- Car -->
+      <section id="car">
+        <div class="car-body">
+          <img src="image/car.png" alt="car-image" />
+        </div>
+        <div class="wheel">
+          <img src="image/backwheel.png" class="back-wheel" alt="back-wheel" />
+          <img src="image/frontwheel.png" class="front-wheel" alt="front-wheel" />
+        </div>
+      </section>
+
+      <!-- Traffic Light -->
+      <section class="traffic-light">
+        <div class="">
+          <img src="image/traffic-light.png" alt="" class="traffic-light-sign">
+        </div>
+        <div class="lights">
+          <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

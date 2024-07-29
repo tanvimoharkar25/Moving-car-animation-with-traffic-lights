@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.myCanvas
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.road
+{
+    height: 250px;
+    width: 500%;
+    background-image: url(image/road.png);
+    background-size: contain;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+/* Car Section */
+#car
+{
+    width: 500px !important;
+    height: 200px ;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    z-index: 10;
+
+}
+.car-body img
+{
+    width: 100%;
+}
+.wheel 
+{
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.back-wheel
+{
+    left: -190px;
+    position: absolute;
+}
+.front-wheel
+{
+    left: 112px;
+    position: absolute;
+}
+.wheel img
+{
+    width: 72px;
+    height: 72px;
+    animation: rotateWheel 1s linear infinite;
+}
+@keyframes rotateWheel
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* traffic light */
+.traffic-light-sign{
+    position: absolute;
+    height: 500px;
+    z-index: 8;
+    right: 50px;
+    top:70px;
+}
+.lights{
+    position: absolute;
+    top: 90px;
+    right:65px;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.light {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 0.4;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: rgb(15, 185, 15);
+}
+.red.active, .yellow.active, .green.active {
+    opacity: 1;
+    box-shadow: 0 0 20px 5px currentColor;
+}
